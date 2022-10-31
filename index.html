@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip Assignment</title>
+</head>
+<!-- <style>
+    .container {
+        background-color: rgb(8, 61, 61);
+        color: chartreuse;
+    } -->
+</style>
+
+<body>
+    <h3>Q.1 What is JavaScript ?</h3>
+    <p><b>Ans:</b>JavaScript is client side scripting language, which runs on browser. <br>
+        It works on behaviors and functionality. <br>
+        JavaScript is widely used in world-wide.</p>
+    <h3>Q.2 Write down difference between Declaration and Initialization a variable.</h3>
+    <p><b>Ans:</b>In variable Declaration assign the name of variable, like <b><i> var x;</i></b> <br>
+        In variable Initialization assign the value of variable which are declared, like <b><i> var x=3;</i></b></p>
+    <h3>Q.3 In how many ways we can define a variable .</h3>
+    <p><b>Ans:</b> There are ways to define variable. <br>
+    <ol>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ol>
+    </p>
+    <h3>Q.4 Is variable is case sensitive ?</h3>
+    <p><b>Ans:</b>Yes, variables are case sensitive.</p>
+    <h3>Q.5 When we declare a variable can we start it with any number?</h3>
+    <p><b>Ans:</b> When we want to store a value then we have need to declare the variable. A variable is container.
+        Numbers are not allowed as the first character in names of variables.</p>
+    <hr>
+    <hr>
+    <!-- JavaScrip Portion -->
+    <h1>JavaScrip Tasks</h1>
+    <h4>Task 1</h4>
+    <p class="allpara" id="para1">Most of the time, a JavaScript application needs to work with information. Here are
+        two examples:</p>
+
+    <p class="allpara" id="para2"> An online shop - the information might include goods being sold and a shopping cart.
+    </p>
+    <p class="allpara" id="para3"> A chat application - the information might include users, messages, and much more.
+        <br>Variables are used to store this information.</p>
+    <hr>
+    </p>
+
+    <h4>Task 2</h4>
+    <p class="container" id="box1">There are two limitations on variable names in JavaScript:</p>
+    <p class="container" id="box2">The name must contain only letters, digits, or the symbols $ and _.</p>
+    <p class="container" id="box2">The first character must not be a digit. <br>E.g: let userName; <br>let test123;</p>
+    <script>
+        console.log("Assignment")
+        console.log("Task 1 of Assignment")
+        var x; //Declaration of varaible
+        x = 4; //intilization
+        x = 5; // updating
+        console.log("value of x is: ", x);
+
+        console.log("Task 2 of Assignment");
+        const y = "This is constant  " + 10; //Declaration and Initialization of varaible
+        // y= 4; // No intilization
+        // x=5; // No updating
+        console.log("value of y is: ", y);
+
+        console.log("Task 3 of Assignment");
+        var a = 5;
+        var b = 6;
+        var c = a + b;
+        console.log("Sum of", a, "and", b, "is:  ", c);
+
+        console.log("Task 4 of Assignment");
+        let mycolor;
+        mycolor = "Purple";
+        console.log("The color is:", mycolor);
+
+        console.log("Task 5 of Assignment");
+        var fname = "Lucy", Lname = "John", age = 23;
+        console.log("First Name is:", fname, ", Last Name is;", Lname, "and Age is: ", age);
+        console.log("")
+        console.log("Task in HTML")
+
+        document.getElementById("para1").style.backgroundColor = "yellow";
+        document.getElementById("para1").style.fontSize = "20px";
+        document.getElementById("para1").style.color = "red";
+
+        //  Yes, we can add multiple CSS properties when we are using  getElementById by cssText and setAttribute
+        document.getElementById("para2").style.cssText = "background-color:blue; font-size: 30px; color: white; "
+
+        // by setAttribute
+        document.getElementById("para3").setAttribute(
+            "style", "font-size: 26px; font-style: italic; color:#ff0000; background-color:#cce7e8");
+
+        //    Task 2
+        document.getElementsByClassName("container")[0].style.color = "red";
+        document.getElementsByClassName("container")[1].style.color = "Blue";
+// I Try but not find it.
+    </script>
+</body>
+
+</html>
